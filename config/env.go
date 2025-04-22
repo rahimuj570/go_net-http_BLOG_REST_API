@@ -2,10 +2,9 @@ package config
 
 import "github.com/joho/godotenv"
 
-func LoadEnv() error {
+func LoadEnv() {
 	err := godotenv.Load()
 	if err != nil {
 		panic("No .env file found")
 	}
-	return nil
 }
