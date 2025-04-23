@@ -14,6 +14,7 @@ func main() {
 	//Load Env
 	config.LoadEnv()
 	router := routes.SetupRouter()
+	config.InitDB()
 
 	// Configuring Server
 	server := &http.Server{
