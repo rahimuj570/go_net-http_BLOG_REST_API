@@ -11,7 +11,6 @@ import (
 
 var DB *sql.DB
 var once sync.Once
-var err error
 
 func InitDB() {
 	once.Do(func() {
